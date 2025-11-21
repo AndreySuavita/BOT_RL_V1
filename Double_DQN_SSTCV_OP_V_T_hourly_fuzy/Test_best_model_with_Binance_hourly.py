@@ -21,3 +21,4 @@ with_binance_balance = False # If True, use Binance balance for the test
 
 # Run the Binance test
 binance_test(device, window_size, time_cycle, initial_balance, int(binance_on), with_binance_balance)
+

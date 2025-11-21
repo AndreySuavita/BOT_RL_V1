@@ -29,7 +29,7 @@ def training_model(episodes, time_cycle, start_time, patience, save_path, agent,
         train_rewards.append(total_reward)
 
         # Evaluation and saving
-        if e % 5 == 0:
+        if e % 25 == 0:
             val_return, _, _ , actions= evaluate(agent, test_env, scaler, initial_balance, time_cycle = time_cycle)
             elapsed = (time.time() - start_time) / 3600
 
